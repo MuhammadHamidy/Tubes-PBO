@@ -16,10 +16,14 @@ class Assignment {
     }
 
     public void displayDetails(){
-        System.out.println("Tile: " + title);
+        System.out.println("Title: " + title);
         System.out.println("Description: " + description);
         System.out.println("Due Date: " + dueDate);
-        System.out.println("Stasut: " + status);
+        System.out.println("Status: " + status);
+    }
+
+    public void setStatus(String status){
+        this.status = status;
     }
 }
 
@@ -49,14 +53,14 @@ class Submission {
     }
 }
 
-//assingment method
+//assignment method
 public class AssignmentSystem{
-    List<AssignmentSystem> assignments = new ArrayList<>();
+    List<Assignment> assignments = new ArrayList<>();
     Map<String, Submission> submissions = new HashMap<>();
 
     public void displayMenu(){
         System.out.println("1. List Assignments");
-        System.out.println("2. View Assignments Details");
+        System.out.println("2. View Assignment Details");
         System.out.println("3. Submit Assignment");
         System.out.println("4. Edit Submission");
         System.out.println("5. Exit");
@@ -71,43 +75,44 @@ public class AssignmentSystem{
     public void viewAssignmentDetails(int index) {
         if(index < 0 || index >= assignments.size()){
             System.out.println("Invalid assignment index!");
+            return;
         }
         assignments.get(index).displayDetails();
     }
 
     public void submitAssignment(int index, String fileName, String fileType, long fileSize) {
-        if (index < 0   || index >= assignments.size()) {
-            System.out.println("Invalis assignment index");
+        if (index < 0 || index >= assignments.size()) {
+            System.out.println("Invalid assignment index!");
             return;
         }
         Submission submission = new Submission(fileName, fileType, fileSize);
         if(submission.validate()) {
             submissions.put(assignments.get(index).title, submission);
-            assignments.get(index).status = "telah dikumpul";
+            assignments.get(index).setStatus("telah dikumpul");
             System.out.println("Submission Successful");
         }
     }
 
-    // public void editSubmission(int index, String fileName, String fileType, long fileSize){
-    //     if (index < 0 || index >= assignments.size()){
-    //         System.out.println("Invalid assignment index!");
-    //         return;
-    //     }
-    //     if(!submissions.containsKey(assignments.get(index).title)){
-    //         System.out.println("No submission to edit!");
-    //         return;
-    //     }
-    //     Submission submission = new Submission(fileName, fileType, fileSize);
-    //     if (submission.validate()){
-    //         submissions.put(assignments.get(index).title, submission);
-    //         System.out.println("Submission edited Successful!");
-    //     }
-    // }
+    public void editSubmission(int index, String fileName, String fileType, long fileSize){
+        if (index < 0 || index >= assignments.size()){
+            System.out.println("Invalid assignment index!");
+            return;
+        }
+        if(!submissions.containsKey(assignments.get(index).title)){
+            System.out.println("No submission to edit!");
+            return;
+        }
+        Submission submission = new Submission(fileName, fileType, fileSize);
+        if (submission.validate()){
+            submissions.put(assignments.get(index).title, submission);
+            System.out.println("Submission edited Successfully!");
+        }
+    }
 
     // public static void main(String[] args) {
     //     AssignmentSystem system = new AssignmentSystem();
-    //     system.assignments.add(new Assignment("Math Homework", "Solve probles 1-10", new Date(), "not started"));
-    //     system.assignments.add(new Assignment("Science Project", "Build Volcano", new Date(), "not started"));
+    //     system.assignments.add(new Assignment("Math Homework", "Solve problems 1-10", new Date(), "belum mulai"));
+    //     system.assignments.add(new Assignment("Science Project", "Build a Volcano", new Date(), "belum mulai"));
 
     //     Scanner scanner = new Scanner(System.in);
 
@@ -120,7 +125,7 @@ public class AssignmentSystem{
     //                 break;
 
     //             case 2:
-    //                 System.out.println("Enter Assignment index: ");
+    //                 System.out.println("Enter assignment index: ");
     //                 int index = scanner.nextInt();
     //                 system.viewAssignmentDetails(index - 1);
     //                 break;
@@ -130,9 +135,9 @@ public class AssignmentSystem{
     //                 index = scanner.nextInt();
     //                 System.out.println("Enter file name: ");
     //                 String fileName = scanner.next();
-    //                 System.out.println("Enter File Type: ");
+    //                 System.out.println("Enter file type: ");
     //                 String fileType = scanner.next();
-    //                 System.out.println("Enter File Size: ");
+    //                 System.out.println("Enter file size: ");
     //                 long fileSize = scanner.nextLong();
     //                 system.submitAssignment(index - 1, fileName, fileType, fileSize);
     //                 break;
@@ -142,16 +147,16 @@ public class AssignmentSystem{
     //                 index = scanner.nextInt();
     //                 System.out.println("Enter file name: ");
     //                 fileName = scanner.next();
-    //                 System.out.println("Enter File Type: ");
+    //                 System.out.println("Enter file type: ");
     //                 fileType = scanner.next();
-    //                 System.out.println("Enter File Size: ");
+    //                 System.out.println("Enter file size: ");
     //                 fileSize = scanner.nextLong();
-    //                 system.editSubmission(
-    //                     - 1, fileName, fileType, fileSize);
+    //                 system.editSubmission(index - 1, fileName, fileType, fileSize);
     //                 break;
 
     //             case 5:
     //                 System.out.println("Exiting...");
+    //                 scanner.close();
     //                 return;
 
     //             default:
@@ -161,5 +166,3 @@ public class AssignmentSystem{
     //     }
     // }
 }
-
-
