@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="633.0" prefWidth="900.0" style="-fx-background-color: #DDF4FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edubridge_final.SceneIsiHome1Controller">
+   <children>
+      <Circle layoutX="838.0" layoutY="286.0" opacity="0.3" radius="56.0" stroke="#ffffff00" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" focusDistance="0.02298850574712641" radius="0.8103448275862069">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9921568632125854" green="0.7372549176216125" blue="0.37254902720451355" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+         <effect>
+            <MotionBlur />
+         </effect>
+      </Circle>
+      <Circle layoutX="803.0" layoutY="401.0" opacity="0.3" radius="75.0" stroke="#ffffff00" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" focusDistance="0.02298850574712641" radius="0.8103448275862069">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9921568632125854" green="0.7372549176216125" blue="0.37254902720451355" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+         <effect>
+            <MotionBlur />
+         </effect>
+      </Circle>
+      <Circle layoutX="9.0" layoutY="400.0" opacity="0.41" radius="75.0" stroke="#ffffff00" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" focusDistance="0.02298850574712641" radius="0.8103448275862069">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9921568632125854" green="0.7372549176216125" blue="0.37254902720451355" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+         <effect>
+            <MotionBlur />
+         </effect>
+      </Circle>
+      <ImageView fitHeight="250.0" fitWidth="800.0" layoutX="50.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Thought%E2%80%8A—%E2%80%8AWhy%20Is%20Computer%20Science%20a%20Good%20Topic%20to%20Study_%201.png" />
+         </image>
+      </ImageView>
+      <Text fill="#2ea1da" layoutX="59.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Science">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="317.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data science merupakan ilmu yang menggabungkan kemahiran di bidang ilmu tertentu dengan keahlian pemrograman, matematika, dan statistik. Bidang ini mencakup pengumpulan, pengolahan, dan analisis data untuk menghasilkan wawasan yang berguna. Dengan memanfaatkan teknologi dan metode analisis, data science dapat membantu dalam pengambilan keputusan yang lebih baik dan efektif." textAlignment="JUSTIFY" wrappingWidth="800.0000000000001">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#2ea1da" layoutX="59.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Silabus">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Pendahuluan ke Data Science " wrappingWidth="210.63037109375" />
+      <Text layoutX="59.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Pengumpulan dan Penyimpanan Data" wrappingWidth="245.63037109375" />
+      <Text layoutX="59.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Pemrograman untuk Data Science" wrappingWidth="223.63037109375" />
+      <Text layoutX="59.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Statistika dan Probabilitas" wrappingWidth="210.63037109375" />
+      <Text layoutX="59.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Pemrosesan dan Pembersihan Data" wrappingWidth="266.63037109375" />
+      <Text layoutX="59.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Analisis Eksplorasi Data (EDA)" wrappingWidth="210.63037109375" />
+      <Text layoutX="59.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Pembelajaran Mesin (Machine Learning)" wrappingWidth="275.63037109375" />
+      <Text layoutX="59.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8. Pembelajaran Mendalam (Deep Learning)" wrappingWidth="290.63037109375" />
+      <Text layoutX="59.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9. Pengolahan Bahasa Alami (NLP)" wrappingWidth="210.63037109375" />
+      <Text layoutX="59.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10. Teknik Tingkat Lanjut" wrappingWidth="245.63037109375" />
+      <Text layoutX="305.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11. Manajemen Proyek Data Science" wrappingWidth="223.63037109375" />
+      <Text layoutX="305.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12. Etika dan Privasi Data" wrappingWidth="210.63037109375" />
+      <Text layoutX="305.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13. Implementasi Proyek Akhir" wrappingWidth="187.63037109375" />
+      <Text layoutX="305.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14. Persiapan Karir dan Industri" wrappingWidth="210.63037109375" />
+      <Text fill="#2ea1da" layoutX="538.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Syarat Bagi Peserta :">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#2ea1da" layoutX="540.0" layoutY="493.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Syarat Bagi Mentor:">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="538.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Usia di rentang 17 - 30 tahun " wrappingWidth="210.63037109375" />
+      <Text layoutX="538.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Tidak sedang menempuh pendidikan formal" wrappingWidth="275.63037109375" />
+      <Text layoutX="538.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Memiliki perangkat dan koneksi yang mendukung" wrappingWidth="306.63037109375" />
+      <Text layoutX="538.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Usia minimal 17 tahun" wrappingWidth="210.63037109375" />
+      <Text layoutX="538.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Memiliki pengalaman dalam bidang terkait" wrappingWidth="283.63037109375" />
+      <Text layoutX="538.0" layoutY="552.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Memiliki perangkat dan koneksi yang mendukung" wrappingWidth="306.6303710937501" />
+      <Text layoutX="538.0" layoutY="568.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Memiliki portfolio Data Sains akan menjadi nilai tambah" wrappingWidth="346.6303710937501" />
+      <ImageView fx:id="Check" fitHeight="15.0" fitWidth="15.0" layoutX="247.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Check.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="tersedia" layoutX="161.0" layoutY="276.0" text="- Kursus Tersedia">
+         <font>
+            <Font name="Times New Roman" size="11.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Cancel" fitHeight="15.0" fitWidth="15.0" layoutX="247.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Cancel.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="penuh" layoutX="161.0" layoutY="276.0" text="- Kursus Penuh">
+         <font>
+            <Font name="Times New Roman" size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="DataScienceButton1" layoutX="436.0" layoutY="231.0" mnemonicParsing="false" onAction="#DataScienceButton1" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #DDF4FF;" text="Front End" />
+      <ImageView fx:id="Cancel31" fitHeight="15.0" fitWidth="15.0" layoutX="445.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Data%20Backup.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

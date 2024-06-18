@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edubridge_final.SceneHomePController">
+   <children>
+      <BorderPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #DCF3FF;">
+         <top>
+            <AnchorPane prefHeight="67.0" prefWidth="900.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="132.0" layoutX="382.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Downloads/EduBridge.png" />
+                     </image>
+                  </ImageView>
+                  <ToggleButton fx:id="jLoginP" layoutX="37.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleButtonLogP" style="-fx-background-color: #FF9600;" text="Login Sebagai Peserta" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="12.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="jLoginM" layoutX="210.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleButtonLogM" style="-fx-background-color: #2EA1DA;" text="Login Sebagai Mentor" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="12.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="jDaftarP" layoutX="552.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleButtonDafP" style="-fx-background-color: #FF9600;" text="Daftar Sebagai Peserta" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="12.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="jDaftarM" layoutX="725.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleButtonDafM" style="-fx-background-color: #2EA1DA;" text="Daftar Sebagai Mentor" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="12.0" />
+                     </font>
+                  </ToggleButton>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="600.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane fx:id="scrollBarHome" prefHeight="633.0" prefWidth="900.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="633.0" prefWidth="900.0" style="-fx-background-color: #DDF4FF;">
+                           <children>
+                              <Circle layoutX="805.0" layoutY="146.0" opacity="0.29" radius="46.0" strokeType="INSIDE">
+                                 <fill>
+                                    <RadialGradient centerX="0.5607734806629834" centerY="0.5" radius="0.6609195402298852">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.8500000238418579" green="1.0" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.006711409395973154">
+                                             <color>
+                                                <Color red="0.8500000238418579" green="1.0" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.6167335079391062">
+                                             <color>
+                                                <Color red="1.0" green="0.5882353186607361" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="0.5882353186607361" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </RadialGradient>
+                                 </fill>
+                                 <stroke>
+                                    <RadialGradient centerX="0.5607734806629834" centerY="0.5" radius="0.6609195402298852">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.8500000238418579" green="1.0" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.006711409395973154">
+                                             <color>
+                                                <Color red="0.8500000238418579" green="1.0" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.6067073170731707">
+                                             <color>
+                                                <Color red="1.0" green="0.5833333134651184" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="0.5882353186607361" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </RadialGradient>
+                                 </stroke>
+                                 <effect>
+                                    <MotionBlur />
+                                 </effect>
+                              </Circle>
+                              <Circle layoutX="734.0" layoutY="300.0" opacity="0.19" radius="100.0" strokeType="INSIDE">
+                                 <fill>
+                                    <RadialGradient centerX="0.5607734806629834" centerY="0.5" radius="0.6609195402298852">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.8500000238418579" green="1.0" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.006711409395973154">
+                                             <color>
+                                                <Color red="0.8500000238418579" green="1.0" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.6167335079391062">
+                                             <color>
+                                                <Color red="1.0" green="0.5882353186607361" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="0.5882353186607361" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </RadialGradient>
+                                 </fill>
+                                 <stroke>
+                                    <RadialGradient centerX="0.5607734806629834" centerY="0.5" radius="0.6609195402298852">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.8500000238418579" green="1.0" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.006711409395973154">
+                                             <color>
+                                                <Color red="0.8500000238418579" green="1.0" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.6067073170731707">
+                                             <color>
+                                                <Color red="1.0" green="0.5833333134651184" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="0.5882353186607361" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </RadialGradient>
+                                 </stroke>
+                                 <effect>
+                                    <MotionBlur />
+                                 </effect>
+                              </Circle>
+                              <ImageView fitHeight="438.0" fitWidth="466.0" layoutX="414.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/image%208.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#0e99fc" layoutX="101.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EduBridge">
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="101.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Membantu Talenta Digital Masa Depan!" wrappingWidth="436.970703125">
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="48.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="101.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jadikan hari ini sebagai langkah pertama menuju masa depan gemilang dengan belajar keterampilan baru." wrappingWidth="404.564453125">
+                                 <font>
+                                    <Font name="Times New Roman" size="14.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="87.0" fitWidth="196.0" layoutX="106.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../Downloads/EduBridge.png" />
+                                 </image>
+                              </ImageView>
+                              <ToggleButton fx:id="JTelusur" layoutX="148.0" layoutY="369.0" mnemonicParsing="false" onAction="#handleButtonTelusur" prefHeight="35.0" prefWidth="260.0" style="-fx-background-color: #2EA1DA;" text="Telusuri Selangkapnya" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="12.0" />
+                                 </font>
+                              </ToggleButton>
+                              <Circle layoutX="70.0" layoutY="386.0" opacity="0.19" radius="100.0" strokeType="INSIDE">
+                                 <fill>
+                                    <RadialGradient centerX="0.5607734806629834" centerY="0.5" radius="0.6609195402298852">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.8500000238418579" green="1.0" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.006711409395973154">
+                                             <color>
+                                                <Color red="0.8500000238418579" green="1.0" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.6167335079391062">
+                                             <color>
+                                                <Color red="1.0" green="0.5882353186607361" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="0.5882353186607361" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </RadialGradient>
+                                 </fill>
+                                 <stroke>
+                                    <RadialGradient centerX="0.5607734806629834" centerY="0.5" radius="0.6609195402298852">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.8500000238418579" green="1.0" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.006711409395973154">
+                                             <color>
+                                                <Color red="0.8500000238418579" green="1.0" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.6067073170731707">
+                                             <color>
+                                                <Color red="1.0" green="0.5833333134651184" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="0.5882353186607361" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </RadialGradient>
+                                 </stroke>
+                                 <effect>
+                                    <MotionBlur />
+                                 </effect>
+                              </Circle>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

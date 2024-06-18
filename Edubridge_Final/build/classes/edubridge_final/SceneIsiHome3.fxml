@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.MotionBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="633.0" prefWidth="900.0" style="-fx-background-color: #DDF4FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Circle layoutX="838.0" layoutY="286.0" opacity="0.3" radius="56.0" stroke="#ffffff00" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" focusDistance="0.02298850574712641" radius="0.8103448275862069">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9921568632125854" green="0.7372549176216125" blue="0.37254902720451355" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+         <effect>
+            <MotionBlur />
+         </effect>
+      </Circle>
+      <Circle layoutX="803.0" layoutY="401.0" opacity="0.3" radius="75.0" stroke="#ffffff00" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" focusDistance="0.02298850574712641" radius="0.8103448275862069">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9921568632125854" green="0.7372549176216125" blue="0.37254902720451355" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+         <effect>
+            <MotionBlur />
+         </effect>
+      </Circle>
+      <Circle layoutX="9.0" layoutY="400.0" opacity="0.41" radius="75.0" stroke="#ffffff00" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" focusDistance="0.02298850574712641" radius="0.8103448275862069">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9921568632125854" green="0.7372549176216125" blue="0.37254902720451355" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+         <effect>
+            <MotionBlur />
+         </effect>
+      </Circle>
+      <ImageView fitHeight="250.0" fitWidth="800.0" layoutX="50.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BackEnd.png" />
+         </image>
+      </ImageView>
+      <Text fill="#2ea1da" layoutX="59.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Back End">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="317.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Back End Developer adalah tulang punggung dari sebuah aplikasi atau website. Mereka bertanggung jawab untuk memastikan semua logika bisnis, pengolahan data, dan komunikasi dengan database berjalan lancar. Menggunakan bahasa pemrograman seperti Python, Java, atau Node.js, Back End Developer membuat server, database, dan aplikasi bekerja bersama untuk menghadirkan pengalaman pengguna yang mulus dan efisien." textAlignment="JUSTIFY" wrappingWidth="800.0000000000001">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#2ea1da" layoutX="59.0" layoutY="423.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Silabus">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="59.0" layoutY="441.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Pengenalan Back End Development" wrappingWidth="210.63037109375" />
+      <Text layoutX="59.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Bahasa Pemrograman Back End" wrappingWidth="245.63037109375" />
+      <Text layoutX="59.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Database Management" wrappingWidth="223.63037109375" />
+      <Text layoutX="59.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. API Development" wrappingWidth="210.63037109375" />
+      <Text layoutX="59.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Server Deployment" wrappingWidth="266.63037109375" />
+      <Text layoutX="59.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Security Practices" wrappingWidth="210.63037109375" />
+      <Text layoutX="59.0" layoutY="542.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Security Practices" wrappingWidth="275.63037109375" />
+      <Text layoutX="59.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8. Project Akhir" wrappingWidth="290.63037109375" />
+      <Text fill="#2ea1da" layoutX="538.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Syarat Bagi Peserta :">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#2ea1da" layoutX="540.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Syarat Bagi Mentor:">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="538.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Usia di rentang 17 - 30 tahun " wrappingWidth="210.63037109375" />
+      <Text layoutX="538.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Tidak sedang menempuh pendidikan formal" wrappingWidth="275.63037109375" />
+      <Text layoutX="538.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Memiliki perangkat dan koneksi yang mendukung" wrappingWidth="306.63037109375" />
+      <Text layoutX="538.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Usia minimal 17 tahun" wrappingWidth="210.63037109375" />
+      <Text layoutX="538.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Memiliki pengalaman dalam bidang terkait" wrappingWidth="283.63037109375" />
+      <Text layoutX="538.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Memiliki perangkat dan koneksi yang mendukung" wrappingWidth="306.6303710937501" />
+      <Text layoutX="538.0" layoutY="585.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Memiliki portfolio Back End akan menjadi nilai tambah" wrappingWidth="346.6303710937501" />
+      <ImageView fx:id="Check3" fitHeight="15.0" fitWidth="15.0" layoutX="247.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Check.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="tersedia3" layoutX="161.0" layoutY="276.0" text="- Kursus Tersedia">
+         <font>
+            <Font name="Times New Roman" size="11.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Cancel3" fitHeight="15.0" fitWidth="15.0" layoutX="247.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Cancel.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="penuh3" layoutX="161.0" layoutY="276.0" text="- Kursus Penuh">
+         <font>
+            <Font name="Times New Roman" size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="backEndButton" layoutX="403.0" layoutY="230.0" mnemonicParsing="false" onAction="#backEndButton" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #DDF4FF;" text="Back End" />
+      <ImageView fx:id="Cancel31" fitHeight="15.0" fitWidth="15.0" layoutX="413.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Data%20Backup.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
