@@ -1,4 +1,4 @@
-package MP;
+package LoginRegister;
 
 public abstract class User {
     protected String firstName;

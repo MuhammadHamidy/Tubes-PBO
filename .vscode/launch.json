@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Peserta",
+            "request": "launch",
+            "mainClass": "MP.Peserta",
+            "projectName": "Tubes-PBO_b7f3447d"
+        },
+        {
+            "type": "java",
             "name": "CourseSystem",
             "request": "launch",
             "mainClass": "Peserta.CourseSystem",

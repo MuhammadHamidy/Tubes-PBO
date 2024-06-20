@@ -1,4 +1,4 @@
-package MP;
+package LoginRegister;
 
 import java.util.ArrayList;
 import java.util.Scanner;
