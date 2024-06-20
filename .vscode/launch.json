@@ -8,6 +8,34 @@
             "type": "java",
             "name": "Peserta",
             "request": "launch",
+            "mainClass": "LoginRegister.Peserta",
+            "projectName": "Tubes-PBO_b7f3447d"
+        },
+        {
+            "type": "java",
+            "name": "NestedSwitchExample",
+            "request": "launch",
+            "mainClass": "AksesModul.NestedSwitchExample",
+            "projectName": "Tubes-PBO_b7f3447d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "HalamanUtama.Main",
+            "projectName": "Tubes-PBO_b7f3447d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "KumpulTugas.Main",
+            "projectName": "Tubes-PBO_b7f3447d"
+        },
+        {
+            "type": "java",
+            "name": "Peserta",
+            "request": "launch",
             "mainClass": "MP.Peserta",
             "projectName": "Tubes-PBO_b7f3447d"
         },
