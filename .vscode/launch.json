@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Dashboard",
+            "request": "launch",
+            "mainClass": "HalamanUtama.Dashboard",
+            "projectName": "Tubes-PBO_b7f3447d"
+        },
+        {
+            "type": "java",
             "name": "Peserta",
             "request": "launch",
             "mainClass": "LoginRegister.Peserta",

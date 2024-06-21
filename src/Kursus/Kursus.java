@@ -1,4 +1,6 @@
-package HalamanUtama;
+package Kursus;
+
+import java.util.ArrayList;
 
 public class Kursus {
     private String nama;
@@ -6,6 +8,8 @@ public class Kursus {
     private String status;
     private String deskripsiLengkap;
     private String silabus;
+    private ArrayList<Modul> modulList;
+    private ArrayList<Tugas> tugasList;
 
     public Kursus(String nama, String deskripsiSingkat, String status, String deskripsiLengkap, String silabus) {
         this.nama = nama;
@@ -13,6 +17,8 @@ public class Kursus {
         this.status = status;
         this.deskripsiLengkap = deskripsiLengkap;
         this.silabus = silabus;
+        this.modulList = new ArrayList<>();
+        this.tugasList = new ArrayList<>();
     }
 
     public String getNama() {
@@ -33,6 +39,30 @@ public class Kursus {
 
     public String getSilabus() {
         return silabus;
+    }
+
+    public ArrayList<Modul> getModulList() {
+        return modulList;
+    }
+
+    public ArrayList<Tugas> getTugasList() {
+        return tugasList;
+    }
+
+    public void addModul(Modul modul) {
+        modulList.add(modul);
+    }
+
+    public void removeModul(Modul modul) {
+        modulList.remove(modul);
+    }
+
+    public void addTugas(Tugas tugas) {
+        tugasList.add(tugas);
+    }
+
+    public void removeTugas(Tugas tugas) {
+        tugasList.remove(tugas);
     }
 
     @Override

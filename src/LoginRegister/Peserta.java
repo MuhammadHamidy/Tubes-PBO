@@ -1,35 +1,36 @@
 package LoginRegister;
 
+import Kursus.Kursus;
+import Kursus.ModulStatus;
+import Kursus.Tugas;
+
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Peserta extends User {
+public class Peserta extends User implements Auth, ShowDashboard {
     private String profession;
     private String reasonForJoining;
+    private String courseSelection;
     private ArrayList<String> registeredCourses;
     static ArrayList<Peserta> pesertaList = new ArrayList<>();
     static Scanner scanner = new Scanner(System.in);
-
-    public Peserta(String firstName, String lastName, String birthDate, String email, String password, String phoneNumber, String profession, String reasonForJoining) {
-        super(firstName, lastName, birthDate, email, password, phoneNumber);
-        this.profession = profession;
-        this.reasonForJoining = reasonForJoining;
-        this.registeredCourses = new ArrayList<>();
-    }
+    private ArrayList<ModulStatus> modulStatusList;
 
     public Peserta() {
         // Default constructor
+        this.registeredCourses = new ArrayList<>();
+        this.modulStatusList = new ArrayList<>();
     }
 
     @Override
     public void register() {
-        System.out.println("=== Register as Peserta ===");
         System.out.print("First Name: ");
         String firstName = scanner.nextLine();
         System.out.print("Last Name: ");
         String lastName = scanner.nextLine();
-        System.out.print("Birth Date: ");
-        String birthDate = scanner.nextLine();
+        System.out.print("Age: ");
+        int age = Integer.parseInt(scanner.nextLine());
         System.out.print("Email: ");
         String email = scanner.nextLine();
         System.out.print("Password: ");
@@ -40,82 +41,116 @@ public class Peserta extends User {
         String profession = scanner.nextLine();
         System.out.print("Reason for Joining: ");
         String reasonForJoining = scanner.nextLine();
+        System.out.print("Course Selection: ");
+        String courseSelection = scanner.nextLine();
 
-        Peserta newPeserta = new Peserta(firstName, lastName, birthDate, email, password, phoneNumber, profession, reasonForJoining);
-        pesertaList.add(newPeserta);
-        System.out.println("Registration successful!");
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.email = email;
+        this.password = password;
+        this.phoneNumber = phoneNumber;
+        this.profession = profession;
+        this.reasonForJoining = reasonForJoining;
+        this.courseSelection = courseSelection;
+        pesertaList.add(this);
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("peserta.txt", true))) {
+            writer.write(firstName + "," + lastName + "," + age + "," + email + "," + password + "," + phoneNumber + "," + profession + "," + reasonForJoining + "," + courseSelection);
+            writer.newLine();
+            System.out.println("Peserta registered successfully!");
+        } catch (IOException e) {
+            System.out.println("An error occurred while registering the peserta.");
+            e.printStackTrace();
+        }
     }
 
     @Override
     public boolean login(String email, String password) {
-        System.out.println("=== Peserta Login ===");
-        System.out.print("Email: ");
-        email = scanner.nextLine();
-        System.out.print("Password: ");
-        password = scanner.nextLine();
-
-        for (Peserta peserta : pesertaList) {
-            if (peserta.email.equals(email) && peserta.password.equals(password)) {
-                System.out.println("Login successful! Welcome, " + peserta.firstName);
-                return true;
+        try (BufferedReader reader = new BufferedReader(new FileReader("peserta.txt"))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] details = line.split(",");
+                if (details[3].equals(email) && details[4].equals(password)) {
+                    this.firstName = details[0];
+                    this.lastName = details[1];
+                    this.age = Integer.parseInt(details[2]);
+                    this.email = details[3];
+                    this.password = details[4];
+                    this.phoneNumber = details[5];
+                    this.profession = details[6];
+                    this.reasonForJoining = details[7];
+                    this.courseSelection = details[8];
+                    System.out.println("Login successful!");
+                    return true;
+                }
             }
+        } catch (IOException e) {
+            System.out.println("An error occurred while logging in.");
+            e.printStackTrace();
         }
-        System.out.println("Invalid email or password. Please try again.");
+        System.out.println("Login failed. Please try again.");
         return false;
     }
 
+    @Override
     public void resetPassword() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your email to reset the password:");
-        String inputEmail = scanner.nextLine();
+        // Implementation for resetting password
+    }
 
-        for (Peserta peserta : pesertaList) {
-            if (peserta.email.equals(inputEmail)) {
-                System.out.println("Email verified. Enter new password:");
-                String newPassword = scanner.nextLine();
-                peserta.password = newPassword;
-                System.out.println("Password reset successful.");
-                return;
+    @Override
+    public void showDashboard() {
+        System.out.println("=== Peserta Dashboard ===");
+        System.out.println("Course Selection: " + this.courseSelection);
+        System.out.println("Modules:");
+        try (BufferedReader reader = new BufferedReader(new FileReader("modul.txt"))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] details = line.split(",");
+                if (details[0].equals(this.courseSelection)) {
+                    System.out.println("- " + details[1]);
+                }
             }
+        } catch (IOException e) {
+            System.out.println("An error occurred while reading the modul.txt file.");
+            e.printStackTrace();
         }
-        System.out.println("Error: Email not recognized.");
     }
 
     public void displayRegisteredCourses() {
-        System.out.println("Registered Courses:");
-        for (String course : registeredCourses) {
-            System.out.println(course);
-        }
+        // Implementation for displaying registered courses
     }
 
-    public static void main(String[] args) {
-        Peserta pesertaSystem = new Peserta();
+    public void aksesModul(Kursus kursus) {
+        // Implementation for accessing modules
+    }
 
-        while (true) {
-            System.out.println("1. Register as Peserta");
-            System.out.println("2. Login as Peserta");
-            System.out.println("3. Reset Password");
-            System.out.println("4. Display Registered Courses");
-            System.out.println("5. Exit");
-            System.out.print("Choose an option: ");
-            int choice = Integer.parseInt(scanner.nextLine());
+    public void cariModul(Kursus kursus, String judul) {
+        // Implementation for searching modules
+    }
 
-            switch (choice) {
-                case 1:
-                    pesertaSystem.register();
-                    break;
-                case 2:
-                    pesertaSystem.login("", ""); // Empty strings to match method signature
-                    break;
-                case 3:
-                    pesertaSystem.resetPassword();
-                    break;
-                case 4:
-                    pesertaSystem.displayRegisteredCourses();
-                    break;
-                case 5:
-                    System.exit(0);
-            }
-        }
+    public void updateModulStatus(String judulModul, String status) {
+        // Implementation for updating module status
+    }
+
+    public void aksesTugas(Kursus kursus) {
+        // Implementation for accessing tasks
+    }
+
+    public void tampilkanListTugas(Kursus kursus) {
+        // Implementation for displaying task list
+    }
+
+    public void lihatDetailTugas(Kursus kursus, String judulTugas) {
+        // Implementation for viewing task details
+    }
+
+    public void kumpulkanTugas(Kursus kursus, String judulTugas) {
+        // Implementation for submitting tasks
+    }
+
+    private boolean validateFile(String filePath) {
+        // Implementation for validating file
+        return true; // Placeholder
     }
 }

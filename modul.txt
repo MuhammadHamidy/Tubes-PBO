@@ -1,0 +1,49 @@
+Data Sains,Pendahuluan ke Data Science
+Data Sains,Pengumpulan dan Penyimpanan Data
+Data Sains,Pemrograman untuk Data Science
+Data Sains,Statistika dan Probabilitas
+Data Sains,Pemrosesan dan Pembersihan Data
+Data Sains,Analisis Eksplorasi Data (EDA)
+Data Sains,Pembelajaran Mesin (Machine Learning)
+Data Sains,Pembelajaran Mendalam (Deep Learning)
+Data Sains,Pengolahan Bahasa Alami (NLP)
+Data Sains,Teknik Tingkat Lanjut
+Data Sains,Manajemen Proyek Data Science
+Data Sains,Etika dan Privasi Data
+Data Sains,Implementasi Proyek Akhir
+Data Sains,Persiapan Karir dan Industri
+Front End,Pengenalan HTML
+Front End,Pengenalan CSS
+Front End,Dasar-dasar Javascript
+Front End,Responsive Web Design
+Front End,Frameworks dan Libraries
+Front End,Version Control dengan Git
+Front End,Web Performance Optimization
+Front End,Project Akhir
+Back End,Pengenalan Back End Development
+Back End,Bahasa Pemrograman Back End
+Back End,Database Management
+Back End,API Development
+Back End,Server Deployment
+Back End,Security Practices
+Back End,Testing and Debugging
+Back End,Project Akhir
+Social Media Strategy,Pengenalan Social Media Strategy
+Social Media Strategy,Platform Media Sosial
+Social Media Strategy,Membangun brand di media sosial
+Social Media Strategy,Content Creation and Planning
+Social Media Strategy,Strategi Engagement
+Social Media Strategy,Paid Advertising di Media Sosial
+Social Media Strategy,Analitik dan Reporting
+Social Media Strategy,Social Media Trends and Best Practices
+Social Media Strategy,Project Akhir
+Digital Marketing,Pengenalan Digital Marketing
+Digital Marketing,Search Engine Optimization (SEO)
+Digital Marketing,Search Engine Marketing (SEM)
+Digital Marketing,Content Marketing
+Digital Marketing,Social Media Marketing
+Digital Marketing,Email Marketing
+Digital Marketing,Web Analytics
+Digital Marketing,Affiliate Marketing dan Partnership
+Digital Marketing,Paid Advertising
+Digital Marketing,Project Akhir
